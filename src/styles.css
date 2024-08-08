@@ -1,1 +1,380 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #F6F6F6 !important;
+    scroll-behavior: smooth;
+}
+
+.container{
+    margin: 0 auto !important;
+}
+
+.same-h {
+    color: #000000;
+    font-family: Plus Jakarta Sans;
+    font-size: 42px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 0;
+}
+
+.same-p {
+    color: #000000;
+    font-family: Outfit;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+
+/* for all login screens */
+
+.section-blue-borders h4 {
+    font-size: 24px;
+    color: #000000;
+    font-weight: 800;
+    font-family: Outfit;
+}
+
+.section-blue-borders {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-blue-borders::after {
+    content: "";
+    position: absolute;
+    background-color: #A281ED;
+    border-left: 15px solid #7F56D9;
+    border-bottom: 15px solid #7F56D9;
+}
+
+.section-blue-borders::before {
+    content: "";
+    position: absolute;
+    background-color: #A281ED;
+    border-right: 15px solid #7F56D9;
+    border-top: 15px solid #7F56D9;
+}
+
+.section-blue-borders::after {
+    top: 0;
+    right: 0;
+    width: 180px;
+    height: 180px;
+    border-radius: 0 0 0 100%;
+}
+
+.section-blue-borders::before {
+    bottom: 0;
+    left: 0;
+    width: 180px;
+    height: 180px;
+    border-radius: 0 100% 0 0;
+}
+
+.img-right {
+    width: 100%;
+    max-height: 740px;
+}
+
+/* login-forms */
+
+
+.login-forms {
+    max-width: 410px;
+}
+
+.login-forms h6 {
+    color: #000000;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    font-family: Outfit;
+}
+
+.login-forms p {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    font-family: Outfit;
+}
+
+.login-forms .form-group {
+    margin-bottom: 20px;
+}
+
+.login-forms .form-group label {
+    color: #000000;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 6px;
+    font-family: Outfit;
+}
+
+.login-forms .form-group input {
+    border: 1px solid #D0D5DD;
+    border-radius: 30px;
+    padding: 10px 14px;
+    color: #666666;
+    outline: none;
+    outline: none;
+    font-family: Outfit;
+}
+
+.login-forms .form-group input::placeholder {
+    font-size: 16px;
+    color: #666666;
+    font-family: Outfit;
+}
+
+.login-forms .form-group input:focus,
+.login-forms .form-group input:checked,
+.login-forms .form-group input:active {
+    outline: none !important;
+    border: none !important;
+}
+
+.login-forms .form-check {
+    margin-bottom: 20px;
+}
+
+.login-forms .form-check input {
+    border: 1px solid #D0D5DD;
+    outline: none;
+    border-radius: 5px;
+    margin-right: 16px;
+}
+
+.login-forms .form-check label {
+    font-size: 16px;
+    color: #000000;
+    font-weight: 400;
+    font-family: Outfit;
+}
+
+.login-forms a {
+    text-decoration: none;
+    color: #7F56D9;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Outfit;
+}
+
+.login-forms .verification-code input {
+    width: 50px;
+    height: 50px;
+    margin-right: 24px;
+    border-radius: 10px;
+    border: 1px solid #D0D5DD;
+    text-align: center;
+}
+
+.login-forms .verification-code {
+    margin-bottom: 18px;
+}
+
+.login-forms .verification-code input::-webkit-inner-spin-button,
+.login-forms .verification-code input::-webkit-outer-spin-button {
+    display: none;
+}
+
+/* button */
+.btn-purple {
+    padding: 12px 55px;
+    font-size: 14px;
+    color: #FFFFFF;
+    background-color: #7F56D9;
+    border-radius: 30px;
+    border: none;
+    font-family: Outfit;
+}
+
+
+
+.login-form-v2,
+.forget-passswordV2,
+.verficationV2,
+.new-password-setup,
+.sucessful-msg {
+    padding: 42px 0 93px;
+    background: #FFF;
+}
+
+/* verficationV2 */
+
+.verficationV2 button {
+    margin-bottom: 18px;
+}
+
+.verficationV2 p button {
+    border: none;
+    margin-bottom: 0;
+    background: transparent;
+    color: #F2451C;
+    font-family: Outfit;
+}
+
+/* sucessful-msg */
+
+.sucessful-msg .success-details {
+    width: 400px;
+}
+
+.sucessful-msg .success-details h3 {
+    font-size: 40px;
+    color: #000000;
+    font-weight: 500;
+    font: Outfit;
+}
+
+.sucessful-msg .success-details p {
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 0;
+}
+
+/* for backgrounds */
+
+@media (min-width:0px) and (max-width:575px) {
+
+    .login-form-v2,
+    .forget-passswordV2,
+    .verficationV2,
+    .new-password-setup,
+    .sucessful-msg {
+        padding: 42px 0 70px;
+    }
+
+    .section-blue-borders h4 {
+        position: absolute;
+        top: 40px;
+    }
+
+    .section-blue-borders::after {
+        width: 70px;
+        height: 70px;
+    }
+
+    .section-blue-borders::before {
+        width: 70px;
+        height: 70px;
+    }
+
+    .img-right {
+        display: none;
+    }
+
+    .login-form-column {
+        margin: auto;
+    }
+
+}
+
+@media (min-width:576px) and (max-width:767px) {
+
+    .login-form-v2,
+    .forget-passswordV2,
+    .verficationV2,
+    .new-password-setup,
+    .sucessful-msg {
+        padding: 42px 0 85px;
+    }
+
+    .section-blue-borders h4 {
+        position: absolute;
+        top: 40px;
+    }
+
+    .section-blue-borders::after {
+        width: 100px;
+        height: 100px;
+    }
+
+    .section-blue-borders::before {
+        width: 100px;
+        height: 100px;
+    }
+
+    .img-right {
+        display: none;
+    }
+
+    .login-form-column {
+        margin: auto;
+    }
+
+}
+
+@media (min-width:768px) and (max-width:991px) {
+
+    .section-blue-borders h4 {
+        position: absolute;
+        top: 40px;
+    }
+
+    .section-blue-borders {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-blue-borders h4 {
+        position: absolute;
+        top: 40px;
+    }
+
+    .section-blue-borders {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-blue-borders::after {
+        width: 120px;
+        height: 120px;
+    }
+
+    .section-blue-borders::before {
+        width: 120px;
+        height: 120px;
+    }
+
+
+    /* verficationV2 */
+    .verficationV2 .login-forms .verification-code input {
+        margin-right: 14px;
+    }
+
+}
+
+@media (min-width:992px) and (max-width:1200px) {
+    .section-blue-borders h4 {
+        position: absolute;
+        top: 40px;
+    }
+
+    .section-blue-borders::after {
+        width: 150px;
+        height: 150px;
+    }
+
+    .section-blue-borders::before {
+        width: 150px;
+        height: 150px;
+    }
+
+}
